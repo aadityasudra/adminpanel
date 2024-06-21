@@ -1,0 +1,37 @@
+version = 1
+
+[[analyzers]]
+name = "test-coverage"
+
+[[analyzers]]
+name = "sql"
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "angular",
+    "angularjs",
+    "meteor",
+    "ember",
+    "react",
+    "vue"
+  ]
+  environment = [
+    "nodejs",
+    "browser",
+    "jest",
+    "mocha",
+    "jasmine",
+    "jquery",
+    "mongo",
+    "cypress",
+    "vitest"
+  ]
+
+[[analyzers]]
+name = "php"
+
+[[transformers]]
+name = "php-cs-fixer"
